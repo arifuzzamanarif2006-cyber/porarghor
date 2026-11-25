@@ -1,0 +1,59 @@
+
+:root{--bg:#0a1020;--bg2:#111a2e;--card:#14203a;--line:#223052;--tx:#f1f1f7;--mu:#8d8da6;--pu:#14b8a6;--pk:#fb7185;--or:#f59e0b;--gr:#22c55e;--grad:linear-gradient(135deg,#0ea5e9,#6366f1)}
+[data-t=light]{--bg:#f5f4fb;--bg2:#fff;--card:#fff;--line:#e3e1f0;--tx:#1b1a2e;--mu:#6b6a85}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Baloo Da 2','Hind Siliguri',system-ui,sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;background-image:radial-gradient(900px 400px at 50% -100px,#0ea5e926,transparent)}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+button:focus-visible{outline:2px solid var(--pu);outline-offset:2px}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 18px;border-bottom:1px solid var(--line);background:var(--bg2)}
+h1{font-size:1.15rem;font-weight:700}.tags{display:flex;gap:6px;margin-top:2px}
+.tag{font-size:.68rem;padding:1px 9px;border-radius:99px;background:#14b8a630;color:#7ff0e0}
+.ib{width:36px;height:36px;border-radius:10px;font-size:1.1rem}.ib:hover{background:var(--line)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--gr);box-shadow:0 0 0 4px #22c55e30;margin-right:10px}
+main{max-width:640px;margin:0 auto;padding:6px 14px 110px}
+nav{display:flex;gap:2px;padding:6px;border:1px solid var(--line);border-radius:22px;background:var(--bg2);position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:min(620px,calc(100% - 20px));z-index:5;box-shadow:0 10px 40px #000a}
+nav button{flex:1;min-width:0;padding:8px 4px;border-radius:16px;flex-direction:column;gap:0!important;line-height:1.25;color:var(--mu);font-weight:500;font-size:.9rem;display:flex;gap:6px;align-items:center;justify-content:center}
+nav button.on{background:#14b8a630;color:#7ff0e0}
+.badge{background:var(--gr);color:#fff;font-size:.65rem;padding:0 7px;border-radius:99px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px 16px;margin-top:12px}
+.row{display:flex;align-items:center;gap:12px}.sp{margin-left:auto}
+.mini{width:48px;height:48px;flex:none}.mini text{font-size:11px;font-weight:700;fill:var(--tx)}
+.fire{background:#f59e0b22;color:#fb923c;padding:6px 12px;border-radius:12px;font-weight:700}
+.mu{color:var(--mu);font-size:.8rem}b.big{font-size:1.05rem}
+.banner{margin-top:10px;padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,#0f4c5c,#12304a);display:flex;gap:8px;font-weight:600;cursor:pointer;font-size:.92rem}
+.ringbox{position:relative;width:270px;height:270px;margin:26px auto 0}
+.ringbox svg.ring{position:absolute;inset:0;transform:rotate(-90deg)}
+.mascot{position:absolute;inset:40px}
+.bubble{margin:-14px auto 0;max-width:330px;text-align:center;padding:10px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg2);font-size:.9rem;position:relative}
+.time{font-size:4rem;font-weight:700;text-align:center;margin-top:16px;line-height:1;letter-spacing:1px}
+.sub{text-align:center;color:var(--mu);margin-top:6px;font-size:.88rem}
+.btns{display:grid;grid-template-columns:1.1fr 1fr;gap:10px;margin-top:18px}
+.btn{padding:14px;border-radius:14px;font-weight:700;border:1px solid var(--line);background:var(--bg2)}
+.btn.main{background:var(--grad);border:0;color:#fff;box-shadow:0 8px 24px #2dd4bf55}
+.btn.sm{padding:9px 16px;font-size:.85rem;color:#7ff0e0;background:#14b8a620;margin-top:10px;display:inline-block}
+.tip{text-align:center;color:var(--mu);font-size:.78rem;margin-top:16px}kbd{background:var(--line);padding:1px 7px;border-radius:5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid2 .card{margin-top:0}.stat{font-size:1.45rem;font-weight:700;margin:4px 0 2px}
+.hero{font-size:2.2rem;font-weight:700;margin:6px 0}
+.heat{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,1fr);gap:3px;margin-top:10px}
+.heat i{aspect-ratio:1;border-radius:3px;background:#223052;min-width:8px}
+.l1{background:#0f766e!important}.l2{background:#0d9488!important}.l3{background:#14b8a6!important}.l4{background:#99f6e4!important}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);padding:4px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;margin-top:12px}
+.seg button{padding:8px;border-radius:9px;color:var(--mu);font-weight:600}.seg .on{background:var(--card);color:var(--tx)}
+.av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;flex:none;font-size:1.05rem;border:3px solid transparent}
+.pod{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:end;margin-top:30px;text-align:center}
+.pod .av{margin:0 auto 6px;width:56px;height:56px}.pod p{font-size:.85rem;font-weight:600}
+.step{border-radius:12px 12px 0 0;display:grid;place-items:center;font-size:1.4rem;font-weight:700;color:#fff;margin-top:6px}
+.s1{height:80px;background:linear-gradient(#fbbf24,#f59e0b)}.s2{height:56px;background:linear-gradient(#cbd5e1,#94a3b8)}.s3{height:44px;background:linear-gradient(#5eead4,#fb923c)}
+.li{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;margin-top:8px;background:var(--card)}
+.li.me{border-color:var(--pu);background:#14b8a61a}
+.stage{position:relative;height:430px;margin:6px 0 40px}
+.orb{position:absolute;left:50%;top:50%;width:62%;height:46%;transform:translate(-50%,-50%);border-radius:42% 58% 55% 45%/50% 45% 55% 50%;background:radial-gradient(circle at 40% 35%,#2dd4bf,#0ea5e9 55%,#0c2a5c);box-shadow:0 0 70px #2dd4bf55;display:grid;place-content:center;text-align:center;animation:br 5s ease-in-out infinite}
+@keyframes br{50%{transform:translate(-50%,-50%) scale(1.04)}}
+.orb b{font-size:2.1rem;color:#fff}.seat{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:.72rem;width:76px}
+.seat .av{margin:0 auto 2px}.empty{border:2px dashed var(--line);background:none;color:var(--mu)}
+.chip{padding:8px 14px;border-radius:12px;background:#14b8a625;font-weight:700;color:#7ff0e0;font-size:.85rem}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gr);margin-right:6px;animation:pl 1.4s infinite}
+@keyframes pl{50%{opacity:.3}}
+.note{font-size:.76rem;color:var(--mu);text-align:center;margin-top:18px}
+@media(max-width:420px){.time{font-size:3.2rem}.ringbox{width:230px;height:230px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
